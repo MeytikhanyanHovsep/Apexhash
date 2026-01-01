@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css" />
     <title>ApexHash</title>
 </head>
 
 <body>
-
     <header class="main-header">
-        <div class="container header-inner">
-            <a href="/" class="logo-link">
+        <div id="headerInner" class="container header-inner">
+            <a href="./index.html" class="logo-link">
                 <img class="logo-icon" src="./images/icons/logo.svg" alt="logo" />
                 <div class="logo-letters">
                     <img src="./images/icons/letters/a.svg" alt="a" />
@@ -29,12 +28,12 @@
 
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li><a href="#" class="nav-item">Наши преимущества</a></li>
-                    <li><a href="#" class="nav-item active">Услуги</a></li>
-                    <li><a href="#" class="nav-item">О компании</a></li>
-                    <li><a href="#" class="nav-item">ASIC-майнеры</a></li>
-                    <li><a href="#" class="nav-item">FAQ</a></li>
-                    <li><a href="#" class="nav-item">Контакты</a></li>
+                    <li><a href="#infrastructure" class="nav-item">Наши преимущества</a></li>
+                    <li><a href="#services" class="nav-item">Услуги</a></li>
+                    <li><a href="#about" class="nav-item">О компании</a></li>
+                    <li><a href="#asic" class="nav-item">ASIC-майнеры</a></li>
+                    <li><a href="#faq" class="nav-item">FAQ</a></li>
+                    <li><a href="#footer" class="nav-item">Контакты</a></li>
                 </ul>
             </nav>
             <div class="social-links">
@@ -46,13 +45,44 @@
                 </a>
             </div>
             <a href="tel:" class="header-phone">
-                <span class="phone-number">+7(999) 999-99-99</span>
+                <span class="phone-number font-med">+7(999) 999-99-99</span>
                 <span class="phone-time">Пн-Сб 9:00 - 18:00</span>
             </a>
+            <button class="menu-btn" onclick="setMenuToggle()">
+                <img id="menuBtn" src="./images/icons/menu.svg" alt="Menu" />
+                <img id="closeBtn" src="./images/icons/close.svg" class="close-icon" alt="Close" />
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu">
+            <div onclick="setMenuToggle()" class="mobile-nav-list">
+                <a href="#services" class="mobile-nav-item">Услуги</a>
+                <a href="#infrastructure" class="mobile-nav-item">Наши преимущества</a>
+                <a href="#about" class="mobile-nav-item">О компании</a>
+                <a href="#asic" class="mobile-nav-item">ASIC-майнеры</a>
+                <a href="#faq" class="mobile-nav-item">FAQ</a>
+                <a href="#footer" class="mobile-nav-item">Контакты</a>
+            </div>
+
+            <div class="mobile-menu-footer">
+                <p class="mobile-social-label">
+                    Мы в соц-сетях
+                </p>
+                <div class="mobile-social-row">
+                    <a href="#" class="mobile-social-btn">
+                        <img src="./images/icons/whatsapp.svg" alt="whatsapp" />
+                    </a>
+                    <a href="#" class="mobile-social-btn">
+                        <img src="./images/icons/telegram.svg" alt="telegram" />
+                    </a>
+                </div>
+                <a href="#form" onclick="setMenuToggle()" class="submit-btn mobile-menu-btn font-med">
+                    Оставить заявку
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="hero-section">
+    <main id="main" class="hero-section">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <div class="hero-badges">
@@ -60,7 +90,7 @@
                     <img src="./images/icons/people.svg" class="badge-icon" alt="people" />
                     <p>500+ клиентов</p>
                 </div>
-                <div class="hero-badge">
+                <div class="hero-badge badge-radar">
                     <img src="./images/icons/radar.svg" class="badge-icon" alt="radar" />
                     <p>Работаем с крупнейшими хостинг-провайдерами РФ</p>
                 </div>
@@ -69,31 +99,34 @@
                     <p>Индивидуальные условия на майнинг-пуле</p>
                 </div>
             </div>
-            <h1 class="hero-title font-semi">
-                Агрегатор майнинг-инфраструктуры №1 в России
-            </h1>
+            <h2 class="hero-title font-semi">
+                Агрегатор майнинг-инфраструктуры <br class="mobile-break" /> №1 в России
+            </h2>
             <p class="hero-description">
                 Подберем оптимальный хостинг, подключим к майнинг-пулу на выгодных условиях, полное сопровождение на
                 всех этапах.
             </p>
-            <button class="hero-btn font-med">
+            <a href="#form" class="hero-btn font-med">
                 Получить предложение
-            </button>
+            </a>
         </div>
     </main>
 
-    <section class="infrastructure-section">
+    <section id="infrastructure" class="infrastructure-section">
         <div class="container">
             <div class="infrastructure-card">
-                <div class="infrastructure-visual">
-                    <div class="visual-bg light"></div>
+                <div class="infrastructure-visual visual-first">
+                    <div class="visual-bg light">
+                    </div>
                     <img src="./images/axe.png" class="visual-img axe-img" alt="axe" />
                 </div>
 
                 <div class="infrastructure-text">
                     <span class="section-tag font-med">Наши преимущества</span>
-                    <h2 class="section-title font-semi">Мы берем на себя всю инфраструктуру</h2>
-                    <p class="section-desc">Вы оставляете заявку - мы подбираем хостинг, согласовываем условия,
+                    <h2 class="section-title font-semi">Мы берем на себя всю инфраструктуру
+                    </h2>
+                    <p class="section-desc">Вы оставляете заявку - мы подбираем хостинг, согласовываем
+                        условия,
                         подключаем к майнинг-пулу на индивидуальных условиях, и сопроваждаем юридически. Без рисков,
                         просто и прозрачно.</p>
                     <div class="arrow-circle">
@@ -101,15 +134,16 @@
                     </div>
                 </div>
 
-                <div class="infrastructure-visual">
-                    <div class="visual-bg purple"></div>
+                <div class="infrastructure-visual visual-second">
+                    <div class="visual-bg purple">
+                    </div>
                     <img src="./images/bitcoin.png" class="visual-img bitcoin-img" alt="bitcoin" />
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services-section">
+    <section id="services" class="services-section">
         <div class="container services-container">
             <span class="section-tag font-med">Услуги</span>
             <div class="services-grid">
@@ -122,32 +156,36 @@
                 <div class="service-card">
                     <img src="./images/icons/driver.svg" class="service-icon" alt="driver" />
                     <h3 class="service-title font-med">Подключение к <br /> майнинг-пулу</h3>
-                    <p class="service-desc">Индивидуальные условия и максимальная доходность. Сотрудничаем с ведущими
+                    <p class="service-desc">Индивидуальные условия и максимальная доходность. Сотрудничаем с
+                        ведущими
                         майнинг-пулами по всему миру.</p>
                 </div>
                 <div class="service-card">
                     <img src="./images/icons/check-2.svg" class="service-icon" alt="check" />
                     <h3 class="service-title font-med">Надежность и стабильность</h3>
-                    <p class="service-desc">Все проверено на собственном оборудовании. Мы заранее протестировали
+                    <p class="service-desc">Все проверено на собственном оборудовании. Мы заранее
+                        протестировали
                         площадки и пулы - гарантия стабильной работы и максимального аптайма.</p>
                 </div>
                 <div class="service-card">
                     <img src="./images/icons/eye.svg" class="service-icon" alt="eye" />
                     <h3 class="service-title font-med">Мониторинг 24/7</h3>
-                    <p class="service-desc">Круглосуточный контроль. Наши специалисты и система мониторинга следят за
+                    <p class="service-desc">Круглосуточный контроль. Наши специалисты и система мониторинга
+                        следят за
                         работой оборудования и оперативно реагируют на все технические вопросы.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-section">
+    <section id="about" class="about-section">
         <img src="./images/bgs/main.png" class="about-bg" alt="bg">
         <div class="container about-content">
             <div class="about-header">
                 <span class="section-tag font-med">О компании</span>
                 <h2 class="section-title font-semi">Мы сделали майнинг прогнозируемым</h2>
-                <p class="section-desc">Майнинг — это не про удачу. Это про экспертность, условия и контроль. Мы берем
+                <p class="section-desc">Майнинг — это не про удачу. Это про экспертность, условия и
+                    контроль. Мы берем
                     на себя всю сложную часть: подбор хостинга, проверку площадок, юридическое сопровождение и
                     постоянный мониторинг оборудования.</p>
             </div>
@@ -178,21 +216,26 @@
                 </div>
             </div>
 
-            <div class="form-section-wrapper">
+            <div id="form" class="form-section-wrapper">
                 <div class="form-card">
                     <h2 class="form-title font-semi">
-                        Получите специальные условия под ваш
+                        Получите специальные <br /> условия под ваш
+                        <br class="mobile-break" />
                         <span class="highlight-badge font-semi">проект</span>
                     </h2>
-                    <p class="form-subtitle">Мы подберем хостинг и майнинг-пул под ваше оборудование</p>
+                    <p class="form-subtitle">Мы подберем хостинг и
+                        майнинг-пул под ваше
+                        оборудование</p>
 
                     <form class="main-form">
                         <div class="form-inputs">
-                            <div class="phone-input-wrapper">
-                                <input type="tel" id="phone" placeholder="(999) 999-99-99" class="main-input tel-input">
+                            <div class="input-wrapper">
+                                <input type="tel" id="phone" placeholder="(999) 999-99-99"
+                                    class="main-input w-full h-full" required>
                             </div>
-                            <div>
-                                <input type="text" id="name" placeholder="Ваше имя" class="main-input name-input" />
+                            <div class="input-wrapper">
+                                <input type="text" id="name" placeholder="Ваше имя" class="main-input w-full h-full"
+                                    required />
                             </div>
                             <button type="submit" class="submit-btn font-med">
                                 Отправить
@@ -200,7 +243,9 @@
                         </div>
                         <div class="form-agreement">
                             <input type="checkbox" id="checkbox" class="agreement-checkbox" />
-                            <label for="checkbox" class="agreement-label">Я даю свое согласие на обработку персональных
+                            <label for="checkbox" class="agreement-label">Я даю свое согласие на
+                                обработку
+                                персональных
                                 данных в соответствии с ФЗ №152-ФЗ “О <br /> персональных данных” на условиях и для
                                 целей, определенных Политикой Конфиденциальности.</label>
                         </div>
@@ -222,26 +267,46 @@
         <div class="container market-container">
             <div class="market-grid-left">
                 <div class="market-card mt-offset">
-                    <h4 class="market-card-title font-med">Проверенные <br />хостинг-площадки</h4>
-                    <p class="market-card-desc">Мы работаем только с хостингами, которые прошли техническую и
+                    <h4 class="market-card-title font-med">Проверенные
+                        <br />хостинг-площадки
+                    </h4>
+                    <p class="market-card-desc">Мы работаем только с хостингами,
+                        которые
+                        прошли
+                        техническую и
                         операционную проверку на нашем собственном оборудовании.</p>
                     <img class="market-card-img" src="./images/database.png" alt="database" />
                 </div>
                 <div class="market-card">
-                    <h4 class="market-card-title font-med">Выгодные условия для клиентов</h4>
-                    <p class="market-card-desc">За счёт объёмов и партнёрств мы предлагаем условия, которые недоступны
+                    <h4 class="market-card-title font-med">Выгодные условия для
+                        клиентов</h4>
+                    <p class="market-card-desc">За счёт
+                        объёмов и партнёрств мы
+                        предлагаем
+                        условия,
+                        которые
+                        недоступны
                         при прямом обращении в хостинг.</p>
                     <img class="market-card-img" src="./images/medal.png" alt="medal" />
                 </div>
                 <div class="market-card mt-offset">
-                    <h4 class="market-card-title font-med">Юридическая <br /> прозрачность</h4>
-                    <p class="market-card-desc">Сопровождаем на всех этапах: размещение, работа с цифровыми валютами и
+                    <h4 class="market-card-title font-med">Юридическая <br />
+                        прозрачность</h4>
+                    <p class="market-card-desc">Сопровождаем на всех этапах:
+                        размещение,
+                        работа с
+                        цифровыми
+                        валютами и
                         соблюдение требований законодательства.</p>
                     <img class="market-card-img" src="./images/paper.png" alt="paper" />
                 </div>
                 <div class="market-card">
-                    <h4 class="market-card-title font-med">Контроль и <br /> поддержка 24/7</h4>
-                    <p class="market-card-desc">Мы постоянно мониторим работу оборудования и оперативно решаем
+                    <h4 class="market-card-title font-med">Контроль и <br /> поддержка
+                        24/7</h4>
+                    <p class="market-card-desc">Мы постоянно мониторим работу
+                        оборудования
+                        и оперативно
+                        решаем
                         технические вопросы.</p>
                     <img class="market-card-img" src="./images/headphones.png" alt="headphones" />
                 </div>
@@ -249,23 +314,26 @@
 
             <div class="market-text-right">
                 <span class="section-tag font-med">Почему с нами безопасно</span>
-                <h2 class="section-title font-semi">Ключевые риски майнинга находятся под нашим контролем</h2>
+                <h2 class="section-title font-semi">Ключевые риски майнинга находятся под нашим
+                    контролем
+                </h2>
                 <p class="section-desc">Мы выстраиваем долгосрочные отношения и берем ответственность за
                     инфраструктурную часть вашего майнинга.</p>
             </div>
         </div>
     </section>
 
-    <section class="asic-section">
+    <section id="asic" class="asic-section">
         <div class="container asic-container">
             <div class="asic-header">
                 <span class="section-tag font-med">ASIC-майнеры</span>
                 <h2 class="section-title font-semi">Популярные модели</h2>
-                <p class="section-desc">Привезем оборудование под Ваш запрос с полным пакетом документов, ГТД РФ и
+                <p class="section-desc">Привезем оборудование под Ваш запрос с полным пакетом документов,
+                    ГТД РФ и
                     гарантированным сроком поставки 15-20 дней</p>
             </div>
 
-            <div class="asic-grid">
+            <div class="asic-grid-sec">
                 <div class="asic-card col-span-2">
                     <h3 class="asic-title font-semi">Bitmain Antminer L9 16G</h3>
                     <div class="asic-img-wrapper">
@@ -299,38 +367,53 @@
             </div>
         </div>
     </section>
-
     <section class="stability-section">
         <div class="container stability-container">
             <div class="stability-header">
-                <h2 class="section-title font-semi">Мы знаем, где майнинг<br /> работает стабильно</h2>
-                <p class="section-desc">Рынок майнинга постоянно меняется: условия хостинга, требования к размещению,
+                <h2 class="section-title font-semi">Мы знаем,
+                    где майнинг<br />
+                    работает стабильно</h2>
+                <p class="section-desc">Рынок майнинга постоянно меняется: условия хостинга, требования к
+                    размещению,
                     правовое поле и экономика проектов.</p>
             </div>
             <div class="stability-grid">
                 <div class="stability-card">
                     <img src="./images/bg-1.png" class="stability-img" alt="bg">
-                    <h4 class="stability-title font-med">Актуальные <br /> условия рынка</h4>
-                    <p class="stability-desc">Мы постоянно анализируем хостинг-площадки и тарифы, чтобы предлагать
+                    <h4 class="stability-title font-med">Актуальные <br class="mobile-hidden" /> условия
+                        рынка
+                    </h4>
+                    <p class="stability-desc">Мы постоянно анализируем
+                        хостинг-площадки
+                        и тарифы, чтобы
+                        предлагать
                         стабильные и выгодные решения, соответствующие текущей ситуации на рынке.</p>
                 </div>
                 <div class="stability-card mt-card">
                     <img src="./images/bg-2.png" class="stability-img" alt="bg">
-                    <h4 class="stability-title font-med">Практическая <br /> проверка решений</h4>
-                    <p class="stability-desc">Все площадки и пулы проходят тестирование на нашем собственном
+                    <h4 class="stability-title font-med">Практическая <br class="mobile-hidden" />
+                        проверка
+                        решений</h4>
+                    <p class="stability-desc">Все площадки и пулы проходят
+                        тестирование
+                        на нашем собственном
                         оборудовании до того, как мы рекомендуем их клиентам.</p>
                 </div>
                 <div class="stability-card">
                     <img src="./images/bg-3.png" class="stability-img" alt="bg">
-                    <h4 class="stability-title font-med">Готовность <br /> к росту</h4>
-                    <p class="stability-desc">Мы подбираем инфраструктуру с учетом масштабирования, чтобы проект мог
+                    <h4 class="stability-title font-med">Готовность <br class="mobile-hidden" /> к росту
+                    </h4>
+                    <p class="stability-desc">Мы подбираем инфраструктуру с
+                        учетом
+                        масштабирования, чтобы
+                        проект мог
                         развиваться без смены площадок и условий.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq-section">
+    <section id="faq" class="faq-section">
         <div class="container">
             <div class="faq-box">
                 <img src="./images/invest.png" class="faq-deco-left" alt="search-icon">
@@ -343,20 +426,64 @@
 
                 <div class="faq-list">
                     <div class="faq-item">
-                        <div class="faq-header">
+                        <div class="faq-header" onclick="setFaqItem(0)">
                             С какими хостинг-площадками вы работаете?
-                            <button class="faq-toggle">-</button>
+                            <button class="faq-toggle">+</button>
                         </div>
-                        <p class="faq-answer">
+                        <p class="faq-answer hidden">
                             Мы сотрудничаем с крупнейшими и проверенными хостинг-провайдерами в России. Каждая площадка
                             проходит техническую и операционную проверку на нашем собственном оборудовании перед тем,
                             как мы предлагаем её клиентам.
                         </p>
                     </div>
                     <div class="faq-item">
-                        <div class="faq-header">
-                            С какими хостинг-площадками вы работаете?
-                            <button class="faq-toggle">+</button>
+                        <div class="faq-header" onclick="setFaqItem(1)">
+                            Как обеспечивается стабильность работы оборудования?
+                            <button class=" faq-toggle">+</button>
+                        </div>
+                        <p class="faq-answer hidden">
+                            Мы сотрудничаем с крупнейшими и проверенными хостинг-провайдерами в России. Каждая площадка
+                            проходит техническую и операционную проверку на нашем собственном оборудовании перед тем,
+                            как мы предлагаем её клиентам.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="setFaqItem(2)">
+                            Какие требования к объему оборудования?
+                            <button class=" faq-toggle">+</button>
+                        </div>
+                        <p class="faq-answer hidden">
+                            Мы сотрудничаем с крупнейшими и проверенными хостинг-провайдерами в России. Каждая площадка
+                            проходит техническую и операционную проверку на нашем собственном оборудовании перед тем,
+                            как мы предлагаем её клиентам.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="setFaqItem(3)">
+                            Можно ли работать официально и легально?
+                            <button class=" faq-toggle">+</button>
+                        </div>
+                        <p class="faq-answer hidden">
+                            Мы сотрудничаем с крупнейшими и проверенными хостинг-провайдерами в России. Каждая площадка
+                            проходит техническую и операционную проверку на нашем собственном оборудовании перед тем,
+                            как мы предлагаем её клиентам.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="setFaqItem(4)">
+                            С какими майнинг-пулами вы работаете?
+                            <button class=" faq-toggle">+</button>
+                        </div>
+                        <p class="faq-answer hidden">
+                            Мы сотрудничаем с крупнейшими и проверенными хостинг-провайдерами в России. Каждая площадка
+                            проходит техническую и операционную проверку на нашем собственном оборудовании перед тем,
+                            как мы предлагаем её клиентам.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header" onclick="setFaqItem(5)">
+                            Берете ли вы ответственность за оборудование?
+                            <button class=" faq-toggle">+</button>
                         </div>
                         <p class="faq-answer hidden">
                             Мы сотрудничаем с крупнейшими и проверенными хостинг-провайдерами в России. Каждая площадка
@@ -369,12 +496,12 @@
         </div>
     </section>
 
-    <footer class="main-footer">
+    <footer class="main-footer" id="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-top">
                     <div class="footer-col brand-col">
-                        <a href="/" class="logo-link">
+                        <a href="./index.html" class="logo-link">
                             <img class="logo-icon" src="./images/icons/logo.svg" alt="logo" />
                             <div class="logo-letters">
                                 <img src="./images/icons/letters/a.svg" class="h-small" alt="a" />
@@ -390,16 +517,16 @@
                         <div class="footer-links-group">
                             <a href="#">Хостинг </a>
                             <a href="#">Майнинг-пул </a>
-                            <a href="#">Asic-майнеры </a>
+                            <a href="#asic">Asic-майнеры </a>
                             <a href="#">Сопровождение проектов</a>
                         </div>
                     </div>
 
-                    <div class="footer-col nav-col font-semi">
-                        <a href="#">Услуги</a>
-                        <a href="#">О нас</a>
-                        <a href="#">FAQ</a>
-                        <a href="#">Наши преимущества</a>
+                    <div class="footer-col nav-col">
+                        <a href="#services" class="font-semi footer-nav-item">Услуги</a>
+                        <a href="#about" class="font-semi footer-nav-item">О нас</a>
+                        <a href="#faq" class="font-semi footer-nav-item">FAQ</a>
+                        <a href="#infrastructure" class="font-semi footer-nav-item">Наши преимущества</a>
                     </div>
 
                     <div class="footer-col contact-col">
@@ -439,14 +566,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/intlTelInput.min.js"></script>
-    <script>
-        // const input = document.querySelector("#phone");
-        // window.intlTelInput(input, {
-        //     initialCountry: "ru",
-        //     separateDialCode: true,
-        //     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/utils.js",
-        // });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
