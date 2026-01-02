@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css" />
+    <link rel="preload" href="./images/bgs/main.webp" as="image" fetchpriority="high">
     <title>ApexHash</title>
 </head>
 
@@ -15,14 +16,14 @@
             <a href="./index.html" class="logo-link">
                 <img class="logo-icon" src="./images/icons/logo.svg" alt="logo" />
                 <div class="logo-letters">
-                    <img src="./images/icons/letters/a.svg" alt="a" />
-                    <img src="./images/icons/letters/p.svg" alt="p" />
-                    <img src="./images/icons/letters/e.svg" alt="e" />
-                    <img src="./images/icons/letters/x.svg" alt="x" />
-                    <img src="./images/icons/letters/h.svg" alt="h" />
-                    <img src="./images/icons/letters/a.svg" alt="a" />
-                    <img src="./images/icons/letters/s.svg" alt="s" />
-                    <img src="./images/icons/letters/h.svg" alt="h" />
+                    <img fetchpriority="high" src="./images/icons/letters/a.svg" alt="a" />
+                    <img fetchpriority="high" src="./images/icons/letters/p.svg" alt="p" />
+                    <img fetchpriority="high" src="./images/icons/letters/e.svg" alt="e" />
+                    <img fetchpriority="high" src="./images/icons/letters/x.svg" alt="x" />
+                    <img fetchpriority="high" src="./images/icons/letters/h.svg" alt="h" />
+                    <img fetchpriority="high" src="./images/icons/letters/a.svg" alt="a" />
+                    <img fetchpriority="high" src="./images/icons/letters/s.svg" alt="s" />
+                    <img fetchpriority="high" src="./images/icons/letters/h.svg" alt="h" />
                 </div>
             </a>
 
@@ -38,10 +39,10 @@
             </nav>
             <div class="social-links">
                 <a href="#">
-                    <img src="./images/icons/whatsapp.svg" class="social-icon" alt="whatsapp" />
+                    <img fetchpriority="high" src="./images/icons/whatsapp.svg" class="social-icon" alt="whatsapp" />
                 </a>
                 <a href="#">
-                    <img src="./images/icons/telegram.svg" class="social-icon" alt="telegram" />
+                    <img fetchpriority="high" src="./images/icons/telegram.svg" class="social-icon" alt="telegram" />
                 </a>
             </div>
             <a href="tel:" class="header-phone">
@@ -49,8 +50,8 @@
                 <span class="phone-time">Пн-Сб 9:00 - 18:00</span>
             </a>
             <button class="menu-btn" onclick="setMenuToggle()">
-                <img id="menuBtn" src="./images/icons/menu.svg" alt="Menu" />
-                <img id="closeBtn" src="./images/icons/close.svg" class="close-icon" alt="Close" />
+                <img id="menuBtn" fetchpriority="high" src="./images/icons/menu.svg" alt="Menu" />
+                <img id="closeBtn" fetchpriority="high" src="./images/icons/close.svg" class="close-icon" alt="Close" />
             </button>
         </div>
         <div id="mobileMenu" class="mobile-menu">
@@ -69,10 +70,10 @@
                 </p>
                 <div class="mobile-social-row">
                     <a href="#" class="mobile-social-btn">
-                        <img src="./images/icons/whatsapp.svg" alt="whatsapp" />
+                        <img fetchpriority="high" src="./images/icons/whatsapp.svg" alt="whatsapp" />
                     </a>
                     <a href="#" class="mobile-social-btn">
-                        <img src="./images/icons/telegram.svg" alt="telegram" />
+                        <img fetchpriority="high" src="./images/icons/telegram.svg" alt="telegram" />
                     </a>
                 </div>
                 <a href="#form" onclick="setMenuToggle()" class="submit-btn mobile-menu-btn font-med">
@@ -87,15 +88,15 @@
         <div class="container hero-content">
             <div class="hero-badges">
                 <div class="hero-badge">
-                    <img src="./images/icons/people.svg" class="badge-icon" alt="people" />
+                    <img fetchpriority="high" src="./images/icons/people.svg" class="badge-icon" alt="people" />
                     <p>500+ клиентов</p>
                 </div>
                 <div class="hero-badge badge-radar">
-                    <img src="./images/icons/radar.svg" class="badge-icon" alt="radar" />
+                    <img fetchpriority="high" src="./images/icons/radar.svg" class="badge-icon" alt="radar" />
                     <p>Работаем с крупнейшими хостинг-провайдерами РФ</p>
                 </div>
                 <div class="hero-badge">
-                    <img src="./images/icons/check.svg" class="badge-icon" alt="check" />
+                    <img fetchpriority="high" src="./images/icons/check.svg" class="badge-icon" alt="check" />
                     <p>Индивидуальные условия на майнинг-пуле</p>
                 </div>
             </div>
@@ -118,7 +119,7 @@
                 <div class="infrastructure-visual visual-first">
                     <div class="visual-bg light">
                     </div>
-                    <img src="./images/axe.png" class="visual-img axe-img" alt="axe" />
+                    <img loading="lazy" src="./images/axe.webp" class="visual-img axe-img" alt="axe" />
                 </div>
 
                 <div class="infrastructure-text">
@@ -130,14 +131,14 @@
                         подключаем к майнинг-пулу на индивидуальных условиях, и сопроваждаем юридически. Без рисков,
                         просто и прозрачно.</p>
                     <div class="arrow-circle">
-                        <img src="./images/icons/arrows-bt.svg" alt="bottom" />
+                        <img loading="lazy" src="./images/icons/arrows-bt.svg" alt="bottom" />
                     </div>
                 </div>
 
                 <div class="infrastructure-visual visual-second">
                     <div class="visual-bg purple">
                     </div>
-                    <img src="./images/bitcoin.png" class="visual-img bitcoin-img" alt="bitcoin" />
+                    <img loading="lazy" src="./images/bitcoin.webp" class="visual-img bitcoin-img" alt="bitcoin" />
                 </div>
             </div>
         </div>
@@ -148,27 +149,27 @@
             <span class="section-tag font-med">Услуги</span>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="./images/icons/cloud.svg" class="service-icon" alt="cloud" />
+                    <img loading="lazy" src="./images/icons/cloud.svg" class="service-icon" alt="cloud" />
                     <h3 class="service-title font-med">Подберем оптимальный хостинг на выгодных условиях</h3>
                     <p class="service-desc">Работаем с крупнейшими хостинг-провайдерами России. Берем на себя
                         переговоры, согласование тарифов и размещение.</p>
                 </div>
                 <div class="service-card">
-                    <img src="./images/icons/driver.svg" class="service-icon" alt="driver" />
+                    <img loading="lazy" src="./images/icons/driver.svg" class="service-icon" alt="driver" />
                     <h3 class="service-title font-med">Подключение к <br /> майнинг-пулу</h3>
                     <p class="service-desc">Индивидуальные условия и максимальная доходность. Сотрудничаем с
                         ведущими
                         майнинг-пулами по всему миру.</p>
                 </div>
                 <div class="service-card">
-                    <img src="./images/icons/check-2.svg" class="service-icon" alt="check" />
+                    <img loading="lazy" src="./images/icons/check-2.svg" class="service-icon" alt="check" />
                     <h3 class="service-title font-med">Надежность и стабильность</h3>
                     <p class="service-desc">Все проверено на собственном оборудовании. Мы заранее
                         протестировали
                         площадки и пулы - гарантия стабильной работы и максимального аптайма.</p>
                 </div>
                 <div class="service-card">
-                    <img src="./images/icons/eye.svg" class="service-icon" alt="eye" />
+                    <img loading="lazy" src="./images/icons/eye.svg" class="service-icon" alt="eye" />
                     <h3 class="service-title font-med">Мониторинг 24/7</h3>
                     <p class="service-desc">Круглосуточный контроль. Наши специалисты и система мониторинга
                         следят за
@@ -179,7 +180,7 @@
     </section>
 
     <section id="about" class="about-section">
-        <img src="./images/bgs/main.png" class="about-bg" alt="bg">
+        <img loading="lazy" src="./images/bgs/main.webp" class="about-bg" alt="bg">
         <div class="container about-content">
             <div class="about-header">
                 <span class="section-tag font-med">О компании</span>
@@ -192,25 +193,25 @@
 
             <div class="stats-row">
                 <div class="stat-card">
-                    <img src="./images/icons/people.svg" class="stat-icon" alt="people" />
+                    <img loading="lazy" src="./images/icons/people.svg" class="stat-icon" alt="people" />
                     <p class="stat-value font-semi">500+</p>
                     <p class="stat-label font-semi">клиентов</p>
                 </div>
                 <div class="stat-card">
-                    <img src="./images/icons/medal.svg" class="stat-icon" alt="medal" />
+                    <img loading="lazy" src="./images/icons/medal.svg" class="stat-icon" alt="medal" />
                     <p class="stat-value font-semi">8+</p>
                     <p class="stat-label font-semi">лет на рынке</p>
                 </div>
                 <div class="stat-image-wrapper">
-                    <img src="./images/data-mining.png" class="stat-main-img" alt="mining" />
+                    <img loading="lazy" src="./images/data-mining.webp" class="stat-main-img" alt="mining" />
                 </div>
                 <div class="stat-card">
-                    <img src="./images/icons/flash.svg" class="stat-icon" alt="flash" />
+                    <img loading="lazy" src="./images/icons/flash.svg" class="stat-icon" alt="flash" />
                     <p class="stat-value font-semi">25 МВт</p>
                     <p class="stat-label font-semi">размещённых мощностей</p>
                 </div>
                 <div class="stat-card">
-                    <img src="./images/icons/like.svg" class="stat-icon" alt="like" />
+                    <img loading="lazy" src="./images/icons/like.svg" class="stat-icon" alt="like" />
                     <p class="stat-value font-semi">10+</p>
                     <p class="stat-label font-semi">хостинг-партнёров</p>
                 </div>
@@ -254,7 +255,7 @@
 
                 <div class="telegram-link-wrapper">
                     <a href="#" class="telegram-link font-med">
-                        <img src="./images/icons/tg.svg" class="tg-icon" alt="tg" />
+                        <img loading="lazy" src="./images/icons/tg.svg" class="tg-icon" alt="tg" />
                         Перейти в Telegram
                     </a>
                 </div>
@@ -263,7 +264,7 @@
     </section>
 
     <section class="market-section">
-        <img src="./images/bgs/main-2.png" class="market-bg" alt="bg" />
+        <img loading="lazy" src="./images/bgs/main-2.webp" class="market-bg" alt="bg" />
         <div class="container market-container">
             <div class="market-grid-left">
                 <div class="market-card mt-offset">
@@ -275,7 +276,7 @@
                         прошли
                         техническую и
                         операционную проверку на нашем собственном оборудовании.</p>
-                    <img class="market-card-img" src="./images/database.png" alt="database" />
+                    <img loading="lazy" class="market-card-img" src="./images/database.webp" alt="database" />
                 </div>
                 <div class="market-card">
                     <h4 class="market-card-title font-med">Выгодные условия для
@@ -287,7 +288,7 @@
                         которые
                         недоступны
                         при прямом обращении в хостинг.</p>
-                    <img class="market-card-img" src="./images/medal.png" alt="medal" />
+                    <img loading="lazy" class="market-card-img" src="./images/medal.webp" alt="medal" />
                 </div>
                 <div class="market-card mt-offset">
                     <h4 class="market-card-title font-med">Юридическая <br />
@@ -298,7 +299,7 @@
                         цифровыми
                         валютами и
                         соблюдение требований законодательства.</p>
-                    <img class="market-card-img" src="./images/paper.png" alt="paper" />
+                    <img loading="lazy" class="market-card-img" src="./images/paper.webp" alt="paper" />
                 </div>
                 <div class="market-card">
                     <h4 class="market-card-title font-med">Контроль и <br /> поддержка
@@ -308,7 +309,7 @@
                         и оперативно
                         решаем
                         технические вопросы.</p>
-                    <img class="market-card-img" src="./images/headphones.png" alt="headphones" />
+                    <img loading="lazy" class="market-card-img" src="./images/headphones.webp" alt="headphones" />
                 </div>
             </div>
 
@@ -338,31 +339,31 @@
                 <div class="asic-card col-span-2">
                     <h3 class="asic-title font-semi">Bitmain Antminer L9 16G</h3>
                     <div class="asic-img-wrapper">
-                        <img src="./images/miner-1.png" alt="miner">
+                        <img loading="lazy" src="./images/miner-1.webp" alt="miner">
                     </div>
                 </div>
                 <div class="asic-card col-span-2">
                     <h3 class="asic-title font-semi">Bitmain antminer s21+ 235T</h3>
                     <div class="asic-img-wrapper">
-                        <img src="./images/miner-2.png" alt="miner">
+                        <img loading="lazy" src="./images/miner-2.webp" alt="miner">
                     </div>
                 </div>
                 <div class="asic-card col-span-2">
                     <h3 class="asic-title font-semi">Bitmain Antminer s21 pro 234T</h3>
                     <div class="asic-img-wrapper">
-                        <img src="./images/miner-3.png" alt="miner">
+                        <img loading="lazy" src="./images/miner-3.webp" alt="miner">
                     </div>
                 </div>
                 <div class="asic-card col-span-3">
                     <h3 class="asic-title font-semi">Bitmain Antminer s21 xp 270T</h3>
                     <div class="asic-img-wrapper">
-                        <img src="./images/miner-2.png" alt="miner">
+                        <img loading="lazy" src="./images/miner-2.webp" alt="miner">
                     </div>
                 </div>
                 <div class="asic-card col-span-3">
                     <h3 class="asic-title font-semi">Bitmain Antminer s23 318T</h3>
                     <div class="asic-img-wrapper">
-                        <img src="./images/miner-4.png" alt="miner">
+                        <img loading="lazy" src="./images/miner-4.webp" alt="miner">
                     </div>
                 </div>
             </div>
@@ -380,7 +381,7 @@
             </div>
             <div class="stability-grid">
                 <div class="stability-card">
-                    <img src="./images/bg-1.png" class="stability-img" alt="bg">
+                    <img loading="lazy" src="./images/bg-1.webp" class="stability-img" alt="bg">
                     <h4 class="stability-title font-med">Актуальные <br class="mobile-hidden" /> условия
                         рынка
                     </h4>
@@ -391,7 +392,7 @@
                         стабильные и выгодные решения, соответствующие текущей ситуации на рынке.</p>
                 </div>
                 <div class="stability-card mt-card">
-                    <img src="./images/bg-2.png" class="stability-img" alt="bg">
+                    <img loading="lazy" src="./images/bg-2.webp" class="stability-img" alt="bg">
                     <h4 class="stability-title font-med">Практическая <br class="mobile-hidden" />
                         проверка
                         решений</h4>
@@ -401,7 +402,7 @@
                         оборудовании до того, как мы рекомендуем их клиентам.</p>
                 </div>
                 <div class="stability-card">
-                    <img src="./images/bg-3.png" class="stability-img" alt="bg">
+                    <img loading="lazy" src="./images/bg-3.webp" class="stability-img" alt="bg">
                     <h4 class="stability-title font-med">Готовность <br class="mobile-hidden" /> к росту
                     </h4>
                     <p class="stability-desc">Мы подбираем инфраструктуру с
@@ -417,8 +418,8 @@
     <section id="faq" class="faq-section">
         <div class="container">
             <div class="faq-box">
-                <img src="./images/invest.png" class="faq-deco-left" alt="search-icon">
-                <img src="./images/invest-2.png" class="faq-deco-right" alt="search-icon">
+                <img loading="lazy" src="./images/invest.webp" class="faq-deco-left" alt="search-icon">
+                <img loading="lazy" src="./images/invest-2.webp" class="faq-deco-right" alt="search-icon">
 
                 <span class="section-tag font-med">FAQ</span>
                 <h2 class="faq-title font-semi">
@@ -503,14 +504,14 @@
                 <div class="footer-top">
                     <div class="footer-col brand-col">
                         <a href="./index.html" class="logo-link">
-                            <img class="logo-icon" src="./images/icons/logo.svg" alt="logo" />
+                            <img loading="lazy" class="logo-icon" src="./images/icons/logo.svg" alt="logo" />
                             <div class="logo-letters">
-                                <img src="./images/icons/letters/a.svg" class="h-small" alt="a" />
-                                <img src="./images/icons/letters/p.svg" class="h-small" alt="p" />
-                                <img src="./images/icons/letters/e.svg" class="h-small" alt="e" />
-                                <img src="./images/icons/letters/x.svg" class="h-small" alt="x" />
-                                <img src="./images/icons/letters/h.svg" class="h-small" alt="h" />
-                                <img src="./images/icons/letters/a.svg" class="h-small" alt="a" />
+                                <img loading="lazy" src="./images/icons/letters/a.svg" class="h-small" alt="a" />
+                                <img loading="lazy" src="./images/icons/letters/p.svg" class="h-small" alt="p" />
+                                <img loading="lazy" src="./images/icons/letters/e.svg" class="h-small" alt="e" />
+                                <img loading="lazy" src="./images/icons/letters/x.svg" class="h-small" alt="x" />
+                                <img loading="lazy" src="./images/icons/letters/h.svg" class="h-small" alt="h" />
+                                <img loading="lazy" src="./images/icons/letters/a.svg" class="h-small" alt="a" />
                                 <img src="./images/icons/letters/s.svg" class="h-small" alt="s" />
                                 <img src="./images/icons/letters/h.svg" class="h-small" alt="h" />
                             </div>
@@ -543,10 +544,10 @@
                             <p class="contact-label">Мы в социальных сетях</p>
                             <div class="social-links-footer">
                                 <a href="#" class="social-box">
-                                    <img src="./images/icons/whatsapp.svg" alt="whatsapp" />
+                                    <img loading="lazy" src="./images/icons/whatsapp.svg" alt="whatsapp" />
                                 </a>
                                 <a href="#" class="social-box">
-                                    <img src="./images/icons/telegram.svg" alt="telegram" />
+                                    <img loading="lazy" src="./images/icons/telegram.svg" alt="telegram" />
                                 </a>
                             </div>
                         </div>
@@ -554,13 +555,16 @@
                 </div>
 
                 <div class="footer-bottom">
-                    <p>© 2025 APEXHASH. Все права защищены.</p>
+                    <div class="bottom-text">© 2025 <h1 style="text-transform: uppercase; padding-left: 5px;">Apexhash
+                        </h1>. Все права
+                        защищены.
+                    </div>
                     <div class="legal-links">
                         <a href="">Оферта</a>
                         <a href="">Политика конфиденциальности</a>
                         <a href="">Пользовательское соглашение</a>
                     </div>
-                    <p class="made-by">Сделано в <img src="./images/icons/ruso-logo.svg" alt="Ruso"></p>
+                    <p class="made-by">Сделано в <img loading="lazy" src="./images/icons/ruso-logo.svg" alt="Ruso"></p>
                 </div>
             </div>
         </div>
