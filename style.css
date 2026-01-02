@@ -101,10 +101,11 @@ button {
     font-size: 55px;
     line-height: 1;
     letter-spacing: -2px;
-    margin: 0 0 20px 0;
 }
 
 .section-desc {
+
+    line-height: 26px;
     font-size: 17px;
     color: #5C5C5C;
     margin: 0;
@@ -157,6 +158,10 @@ button {
     transition: background-color 0.2s;
 }
 
+.nav-item-lg {
+    padding: 27px 30px !important;
+}
+
 .nav-item:hover {
     background-color: #F9F9F9;
 }
@@ -189,6 +194,18 @@ button {
     aspect-ratio: 1 / 1;
     background-color: #ffffff;
     border-radius: 20px;
+    transition: 0.3s;
+}
+
+.header-phone:hover,
+.hero-btn:hover,
+.submit-btn:hover,
+.telegram-link:hover {
+    filter: brightness(90%);
+}
+
+.social-icon:hover {
+    background: #F9F9F9;
 }
 
 .header-phone {
@@ -196,6 +213,7 @@ button {
     flex-direction: column;
     white-space: nowrap;
     gap: 15px;
+    transition: 0.3s;
     color: white;
     align-items: center;
     justify-content: center;
@@ -300,6 +318,7 @@ button {
 .hero-description {
     max-width: 670px;
     font-size: 18px;
+    line-height: 24px;
     margin: 0;
 }
 
@@ -311,6 +330,7 @@ button {
     border-radius: 25px;
     margin-top: 10px;
     font-size: inherit;
+    transition: 0.3s;
 }
 
 .infrastructure-section .container {
@@ -645,6 +665,7 @@ button {
     border-radius: 25px;
     font-size: 18px;
     color: white;
+    transition: 0.3s;
     width: 100%;
     height: 100px;
 }
@@ -675,6 +696,7 @@ button {
 }
 
 .telegram-link {
+    transition: 0.3s;
     display: flex;
     max-width: max-content;
     padding: 28px 41px;
@@ -742,6 +764,7 @@ button {
     color: #97989B;
     margin-top: 10px;
     position: relative;
+    line-height: 24px;
     z-index: 20;
 }
 
@@ -978,7 +1001,13 @@ button {
     gap: 20px;
 }
 
+.faq-header:hover>.faq-toggle {
+    transform: scale(1.1);
+    filter: brightness(95%);
+}
+
 .faq-toggle {
+    transition: 0.3s;
     font-size: 28px;
     cursor: pointer;
     height: 65px;
@@ -1039,6 +1068,7 @@ button {
 
 .footer-links-group {
     display: flex;
+    gap: 10px;
     flex-direction: column;
     color: #97989B;
 }
@@ -1123,10 +1153,6 @@ button {
 }
 
 .mobile-break {
-    display: none;
-}
-
-.mobile-hidden {
     display: none;
 }
 
@@ -1365,6 +1391,7 @@ button {
     }
 
     .hero-description {
+        line-height: 16px;
         font-size: 13px;
     }
 
@@ -1664,6 +1691,10 @@ button {
         padding-top: 22px;
     }
 
+    .md-hidden {
+        display: none;
+    }
+
     .infrastructure-text {
         gap: 10px;
         margin-bottom: -10px;
@@ -1681,6 +1712,7 @@ button {
 
     .section-desc {
         font-size: 13px;
+        line-height: 16px;
     }
 
     .arrow-circle {
@@ -1740,6 +1772,10 @@ button {
 
     .stat-card {
         border-radius: 15px;
+    }
+
+    .main-footer {
+        margin-top: 40px;
     }
 
     .form-card {
@@ -1824,6 +1860,7 @@ button {
 
     .market-card-desc {
         font-size: 16px;
+        line-height: 16px;
     }
 
     .market-text-right {
@@ -1839,6 +1876,8 @@ button {
 
     .asic-header {
         gap: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
         margin-bottom: 20px;
     }
 
@@ -1847,8 +1886,10 @@ button {
         font-size: 30px;
     }
 
+
     .asic-title {
         font-size: 16px;
+        margin-bottom: 0px;
     }
 
     .stability-section {
@@ -1889,7 +1930,7 @@ button {
     }
 
     .mobile-hidden {
-        display: block;
+        display: none;
     }
 
     .faq-box {
@@ -1955,6 +1996,7 @@ button {
     }
 
     .nav-col {
+        padding-top: 0;
         gap: 15px;
         justify-content: center;
     }
