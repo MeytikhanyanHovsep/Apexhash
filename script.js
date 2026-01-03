@@ -27,3 +27,19 @@ const iti = window.intlTelInput(phoneInput, {
 phoneInput.addEventListener("blur", () => {
     phoneInput.classList.toggle("invalid", phoneInput.value.trim() && !iti.isValidNumber());
 });
+
+function closeCookieBox() {
+    document.getElementsByClassName("cookie-alerter")[0].style.display = "none"
+}
+
+function setReqPopUp() {
+    document.getElementsByClassName("request-pop-up")[0].classList.toggle("hidden-pop-up")
+}
+
+const form = document.getElementsByClassName("main-form")[0];
+function handleForm(event) {
+    console.log("x")
+    event.preventDefault();
+    setReqPopUp()
+}
+form.addEventListener('submit', handleForm);

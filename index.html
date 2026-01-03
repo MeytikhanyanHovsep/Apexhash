@@ -193,12 +193,12 @@
 
             <div class="stats-row">
                 <div class="stat-card">
-                    <img loading="lazy" src="./images/icons/people.svg" class="stat-icon" alt="people" />
+                    <img loading="lazy" src="./images/icons/people.svg" class="stat-icon f" alt="people" />
                     <p class="stat-value font-semi">500+</p>
                     <p class="stat-label font-semi">клиентов</p>
                 </div>
                 <div class="stat-card">
-                    <img loading="lazy" src="./images/icons/medal.svg" class="stat-icon" alt="medal" />
+                    <img loading="lazy" src="./images/icons/medal.svg" class="stat-icon s" alt="medal" />
                     <p class="stat-value font-semi">8+</p>
                     <p class="stat-label font-semi">лет на рынке</p>
                 </div>
@@ -206,12 +206,12 @@
                     <img loading="lazy" src="./images/data-mining.webp" class="stat-main-img" alt="mining" />
                 </div>
                 <div class="stat-card">
-                    <img loading="lazy" src="./images/icons/flash.svg" class="stat-icon" alt="flash" />
+                    <img loading="lazy" src="./images/icons/flash.svg" class="stat-icon t" alt="flash" />
                     <p class="stat-value font-semi">25 МВт</p>
                     <p class="stat-label font-semi">размещённых мощностей</p>
                 </div>
                 <div class="stat-card">
-                    <img loading="lazy" src="./images/icons/like.svg" class="stat-icon" alt="like" />
+                    <img loading="lazy" src="./images/icons/like.svg" class="stat-icon f" alt="like" />
                     <p class="stat-value font-semi">10+</p>
                     <p class="stat-label font-semi">хостинг-партнёров</p>
                 </div>
@@ -244,11 +244,10 @@
                         </div>
                         <div class="form-agreement">
                             <input type="checkbox" id="checkbox" class="agreement-checkbox" />
-                            <label for="checkbox" class="agreement-label">Я даю свое согласие на
-                                обработку
-                                персональных
+                            <label for="checkbox" class="agreement-label">Я даю свое согласие на обработку персональных
                                 данных в соответствии с ФЗ №152-ФЗ “О <br /> персональных данных” на условиях и для
-                                целей, определенных Политикой Конфиденциальности.</label>
+                                целей, определенных <a href="#" style="text-decoration: underline;"> Политикой
+                                    Конфиденциальности.</a> </p>
                         </div>
                     </form>
                 </div>
@@ -262,7 +261,6 @@
             </div>
         </div>
     </section>
-
     <section class="market-section">
         <img loading="lazy" src="./images/bgs/main-2.webp" class="market-bg" alt="bg" />
         <div class="container market-container">
@@ -498,6 +496,24 @@
         </div>
     </section>
 
+    <div class="cookie-alerter container">
+        <div>
+            <h6 class="font-semi">Мы используем файлы cookie</h6>
+            <p>Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, Вы даете согласие на работу
+                с этими файлами.</p>
+        </div>
+        <button onclick="closeCookieBox()" class="submit-btn">Хорошо, принимаю</button>
+    </div>
+
+    <div class="request-pop-up container hidden-pop-up">
+        <div>
+            <img class="request-img" src="./images/request.webp" alt="request" />
+            <h6 class="font-semi">Заявка принята</h6>
+            <p>Мы свяжемся с вами <br />
+                в ближайшее время. </p>
+            <img src="./images/icons/pup-up-close.svg" alt="close" class="close-pop-up" onclick="setReqPopUp()" />
+        </div>
+    </div>
     <footer class="main-footer" id="footer">
         <div class="container">
             <div class="footer-content">
